@@ -139,7 +139,7 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\newfontfamily\FAA[Path=\@fontdir]{FontAwesome}
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
@@ -467,7 +467,7 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
   \vspace{\acvSectionTopSkip}
-  \sectionstyle{#1} 
+  \sectionstyle{#1}
   \phantomsection
   \color{gray}\vhrulefill{0.9pt}
 }
@@ -493,7 +493,7 @@
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
-  % \vspace{\acvSectionContentTopSkip}
+  \vspace{0mm}
   \begin{center}
 }{%
   \end{center}
@@ -502,7 +502,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
+  \vspace{2mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -574,7 +574,7 @@
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[3]{%
-	\skilltypestyle{#1} & \skillsetstyle{#2}, \skilllocstyle{#3}\\
+  \skilltypestyle{#1} & \skillsetstyle{#2}, \skilllocstyle{#3}\\
 }
 
 % Define an environment for cvpub
@@ -590,7 +590,7 @@
 % Define a line of cvpub
 % Usage: \cvpub{<ciation>}
 \newcommand*{\cvpub}[1]{%
-	\leftskip 0.7cm
+  \leftskip 0.7cm
     \parindent -0.7cm
     \pubstyle{#1}
 }
@@ -605,5 +605,5 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{-1.0mm}
 }
