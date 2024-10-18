@@ -176,7 +176,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\color{text}}
+\newcommand*{\paragraphstyle}{\fontsize{11pt}{1em}\bodyfontlight\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -199,9 +199,9 @@
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{text} #1}}
 \newcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{text} #1}}
-\newcommand*{\skilllocstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilllocstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\color{text} #1}}
 
 % For elements of publication
 \newcommand*{\pubstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{text} #1}}
@@ -573,8 +573,8 @@
 
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
-\newcommand*{\cvskill}[3]{%
-  \skilltypestyle{#1} & \skillsetstyle{#2}, \skilllocstyle{#3}\\
+\newcommand*{\cvskill}[2]{%
+  \skilltypestyle{#1} & \skilllocstyle{#2} \\
 }
 
 % Define an environment for cvpub
