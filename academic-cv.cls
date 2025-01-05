@@ -490,7 +490,7 @@
   \paragraphstyle
 }{%
   \par
-  \vspace{2mm}
+  \vspace{-3mm}
 }
 
 % Define an environment for cventry
@@ -499,6 +499,7 @@
   \begin{center}
 }{%
   \end{center}
+  \vspace{-2mm}
 }
 
 % Define an entry of cv information
